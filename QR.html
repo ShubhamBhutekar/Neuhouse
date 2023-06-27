@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My QR Code</title>
+  <style>
+    /* CSS Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: lightblue;
+    }
+    
+    .qr-code {
+      max-width: 300px;
+      border: 2px solid #333;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .anchor{
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 21px;
+    }
+  
+#blink_text{	
+  animation-name:blink;
+  width:280px;
+  animation-duration:1s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:Infinite;
+  }
+
+@keyframes blink{
+  0%{color:green}
+  50%{color:white;}
+  100%{color: red;}
+}
+  </style>
+</head>
+<body>
+  <div class="qr-code">
+    <h2>Make Payment Here</h2>
+    <img src="QR.jpg" alt="QR Code">
+    <a href="index.php" class="anchor" id="blink_text">Back To Home</a>
