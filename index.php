@@ -41,8 +41,7 @@
   //end of location based search
     
     try {
-      //foreach ($keyword as $key => $value) {
-        # code...
+      
 
         $stmt = $connect->prepare("SELECT * FROM room_rental_registrations_apartment WHERE country IN $concats OR country IN $loc OR state IN $concats OR state IN $loc OR city IN $concats OR city IN $loc OR address IN $concats OR address IN $loc OR rooms IN $concats OR landmark IN $concats OR landmark IN $loc OR rent IN $concats OR deposit IN $concats");
         $stmt->execute();
@@ -173,7 +172,7 @@
               if(isset($errMsg)){
                 echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
               }
-              if(count($data) !== 0){
+              else if(count($data) !== 0){
                 echo "<h2 class='text-center'>Available Results:</h2>";
               }else{
                 //echo "<h2 class='text-center' style='color:red;'>Try Some other keywords</h2>";
@@ -202,10 +201,6 @@
 
                               if(isset($value['rent'])){
                                 echo '<p><b>Rent: </b>Rs. '.$value['rent'].' <small><i>per month</i></small></p> ';
-                              } 
-
-                              if(isset($value['sale'])){
-                                echo '<p><b>Sale: </b>Rs. '.$value['sale'].'</p>';
                               } 
                               
                                 if(isset($value['apartment_name']))                         

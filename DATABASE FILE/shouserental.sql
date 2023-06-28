@@ -1,16 +1,8 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 29, 2021 at 05:10 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
---
 -- Database: `shouserental`
 
 -- Table structure for table `cmps`
@@ -65,11 +57,11 @@ CREATE TABLE `room_rental_registrations` (
 --
 
 INSERT INTO `room_rental_registrations` (`id`, `fullname`, `mobile`, `alternat_mobile`, `email`, `country`, `state`, `city`, `landmark`, `rent`, `sale`, `deposit`, `plot_number`, `rooms`, `address`, `accommodation`, `description`, `image`, `open_for_sharing`, `other`, `vacant`, `created_at`, `updated_at`, `user_id`) VALUES
-(13, 'Liam Moore', '7777788888', '6666666656', 'admin@admin.com', 'US', 'AZ', 'Phoenix', 'test', '565', '19500', '8000', '78 nh', '2 BHK', '110 Dt St', '4', 'dssd', 'uploads/sample_image.jpg', NULL, 'zx', 0, '2018-02-16 12:21:43', '2018-02-16 12:21:43', 1),
-(14, 'Lizabeth', '5555555550', '1470000000', 'lizb@mail.com', 'US', 'LA', 'Lafayette', 'test', '880', '23330', '10000', '70 nh', '1 BHK', '5569 St Fran Road', '', '', 'uploads/sample_image.jpg', NULL, NULL, 1, '2018-03-09 05:06:43', '2018-03-09 05:06:43', 2),
-(15, 'Zeigger', '2222222222', '4444022222', 'admin@admmmin.com', 'US', 'IL', 'Dupo', 'test', '600', '18500', '10000', '69 nh', '1 BHK', '76 Ross Street', 'WiFi, Fridge', 'good to see', 'uploads/sample_image.jpg', NULL, NULL, 1, '2018-04-04 11:19:09', '2018-04-04 11:19:09', 1),
-(16, 'Alex', '7896666666', '6666666665', 'alexm@mail.com', 'US', 'VA', 'Martinsville', 'test', '656', '20000', '10999', '78p', '2BHK', '4602 Douglas Rd', 'demo demo demo demo', 'Demo Description', 'uploads/sample_image.jpg', NULL, NULL, 1, '2021-11-29 15:23:02', '2021-11-29 15:23:02', 7),
-(17, 'Demo Name', '7770000000', '7774440001', 'demo@demo.com', 'DemoCountry', 'DemoState', 'DemoCity', 'Demo Landmark', '555', '36000', '15200', 'D 8', '3 BHK', '770 DemoAddress', 'demo facilities', 'This is a demo description for testing!', 'uploads/sample_image.jpg', NULL, NULL, 1, '2021-11-29 16:03:03', '2021-11-29 16:03:03', 7);
+(13, 'Rohit Godse', '9820164578', '8623578610', 'rohit23@gmail.com', 'INDIA', 'Maharashtra', 'Mumbai', 'Dadar', '12000', '19500', '8000', '11plt', '2BHK', 'Dadar Mumbai', '4', 'Peaceful place', 'uploads/sample_image.jpg', NULL, 'NA', 0, '', '', 1),
+(19, 'Saurabh Joshi', '9012567845', '9036891234', 'saurabh@gmail.com', 'INDIA', 'Maharashtra', 'Jalna', 'Chikhli', '5000', 'NULL', '2500', '34 nh', '3 BHK', 'Ramnagar, Chikhl', '', '', 'uploads/sample_image.jpg', NULL, NULL, 1, '2023-06-27 20:15:48', '2023-06-27 20:15:4, 9),
+(16, 'Ankush Chourpagar', '2222222222', '4444022222', 'admin@admmmin.com', 'INDIA', 'Maharashtra', 'Nashik', 'Ganesh nagar', '600', '18500', '10000', '69 nh', '1 BHK', '76 Ross Street', 'WiFi, Fridge', 'good to see', 'uploads/sample_image.jpg', NULL, NULL, 1, '2023-06-27 11:19:09', '2023-04-04 11:19:09', 1),
+(18, 'Rushikesh Borekar', '7896666666', '6666666665', 'alexm@mail.com', 'INDIA', 'Maharashtra', 'Pune', 'Jatra', '656', '20000', '10999', '78p', '2BHK', '4602 Douglas Rd', 'demo demo demo demo', 'Demo Description', 'uploads/sample_image.jpg', NULL, NULL, 1, '2023-06-29 15:23:02', '2023-06-29 15:23:02', 7),
+
 
 -- --------------------------------------------------------
 
@@ -108,8 +100,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `fullname`, `mobile`, `username`, `email`, `password`, `created_at`, `updated_at`, `role`, `status`) VALUES
 (1, 'Shubham Bhutekar', '7620426956', 'admin', 'bhutekarshubham904@gmail.com', 'd00f5d5217896fb7fd601412cb890830', NULL, NULL, 'admin', 1),
-(2, 'Will Williams', '1111110111', 'williams', 'will@mail.com', '9aee390f19345028f03bb16c588550e1', '2018-02-08 06:53:53', '2018-02-08 06:53:53', 'user', 1),
-(7, 'Demo Account', '7778555555', 'demo', 'demo@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '2021-11-16 04:44:20', '2021-11-16 04:44:20', 'user', 1);
+(9, 'Sourabh Joshi', '1111110111', 'Saurabh12', 'saurabh91@gmail.com', '9aee390f19345028f03bb16c588550e1', '2023-02-08 06:53:53', '2023-02-08 06:53:53', 'user', 1),
+(7, 'Demo Account', '7778555555', 'demo', 'demo@mail.com', '5f4dcc3b5aa765d61d8327deb882cf99', '2023-11-16 04:44:20', '2023-11-16 04:44:20', 'user', 1);
 
 --
 -- Indexes for dumped tables
