@@ -34,11 +34,7 @@
 		}catch(PDOException $e) {
 			$errMsg = $e->getMessage();
 		}	
-		// print_r($data1);	
-		// echo "<br><br><br>";
-		// print_r($data2);
-		// echo "<br><br><br>";	
-		// print_r($data);	
+		
 ?>
 <?php include '../include/header.php';?>
 
