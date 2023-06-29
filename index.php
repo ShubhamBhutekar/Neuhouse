@@ -234,7 +234,7 @@
       </div>
       <br>
                   
-                </section>
+    </section>
 
     <!-- Footer -->
     <footer style="background-color: #212529;;">
