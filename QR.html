@@ -51,11 +51,31 @@
         color: red;
       }
     }
+	      .Block{
+
+            display: inline-block;
+            color: goldenrod;
+        }
   </style>
 </head>
 
 <body>
+
+  <h2 id="blink_text">Make Payments Here</h2>
   <div class="qr-code">
-    <h2>Make Payment Here</h2>
-    <img src="QR.jpg" alt="QR Code">
-    <a href="index.php" class="anchor" id="blink_text">BACK TO HOME</a>
+   <img src="QR.jpg" alt="QR Code">
+    <div id="counter" class="Block"></div>
+	    <script>
+        setInterval(function () {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("msg.html");
+            }
+            
+
+         }, 7000);
+    </script>
+	</body>
+	</html>

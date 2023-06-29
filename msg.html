@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <style>
+        #blink_text {
+            animation-name: blink;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                color: rgb(100, 151, 100)
+            }
+
+            50% {
+                color: rgb(204, 82, 82);
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 15px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>
+            <p style="color: green;">Your rooms are BOOKED!</p>
+        </h2>
+    </div>
+    <center>
+        <Div>
+            <a href="index.php">
+                <h2 id="blink_text">BACK TO HOME</h2>
+            </a>
+    </center>
+    </Div>
+</body>
+
+</html>
